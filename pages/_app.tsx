@@ -2,29 +2,35 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import localFont from "next/font/local";
 
-const mcomic = localFont({
+const switzer = localFont({
   src: [
     {
-  
-      path: "../public/font/medium.ttf",
+      path: "../font/Switzer-Medium.otf",
       weight: "500",
       style: "medium",
     },
     {
-      path: "../public/font/regular.ttf",
+      path: "../font/Switzer-Thin.otf",
+      weight: "300",
+      style: "light",
+    },
+    {
+      path: "../font/Switzer-Regular.otf",
       weight: "400",
       style: "regular",
     },
     {
-      path: "../public/font/bold.ttf",
+      path: "../font/Switzer-Bold.otf",
       weight: "600",
       style: "bold",
     },
   ],
-  variable: "--font-mc",
+  variable: "--font-switzer",
 });
 export default function App({ Component, pageProps }: AppProps) {
- return <main className={`${mcomic.variable} font-sans`}>
-    <Component {...pageProps} />;
-  </main>;
+ return (
+   <main className={`${switzer.variable} font-switzer`}>
+     <Component {...pageProps} />;
+   </main>
+ );
 }
