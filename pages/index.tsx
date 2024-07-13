@@ -1,4 +1,5 @@
 import ExpertManaged from "@/components/ExpertManaged";
+import FinancialFuture from "@/components/FinancialFuture";
 import HeroComponents from "@/components/HeroComponents";
 import NavBar from "@/components/NavBar";
 
@@ -11,6 +12,8 @@ export default function Home() {
       <HeroComponents/>
 
       <ExpertManaged />
+
+      <FinancialFuture />
     </main>
   );
 }
