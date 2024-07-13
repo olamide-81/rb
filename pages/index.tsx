@@ -1,3 +1,4 @@
+import ExpertManaged from "@/components/ExpertManaged";
 import HeroComponents from "@/components/HeroComponents";
 import NavBar from "@/components/NavBar";
 
@@ -8,6 +9,8 @@ export default function Home() {
     >
       <NavBar />
       <HeroComponents/>
+
+      <ExpertManaged />
     </main>
   );
 }
