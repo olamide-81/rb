@@ -9,3 +9,20 @@
 }
 
 
+.navigate .bullet {
+    border-radius: 8px;
+    background-color: #fff;
+    filter:grayscale(100%);
+    opacity: 1;
+    cursor: pointer;
+    margin-left: 10px !important;
+    transition: all 0.3s;
+}
+
+.navigate .bullet.swiper-pagination-bullet-active {
+    filter:grayscale(0%);
+    opacity: 1;
+    --tw-scale-x: 1.1;
+    --tw-scale-y: 1.1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}

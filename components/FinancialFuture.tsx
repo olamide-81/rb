@@ -16,7 +16,6 @@ const FinancialFuture = () => {
 
           <Image src={phone_half} alt="your phone" className="mx-auto" />
         </div>
-
       </div>
     );
 }
