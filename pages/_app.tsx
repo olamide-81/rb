@@ -5,7 +5,6 @@ import localFont from "next/font/local";
 const mcomic = localFont({
   src: [
     {
-  
       path: "../public/font/medium.ttf",
       weight: "500",
       style: "medium",
@@ -24,7 +23,9 @@ const mcomic = localFont({
   variable: "--font-mc",
 });
 export default function App({ Component, pageProps }: AppProps) {
- return <main className={`${mcomic.variable} font-sans`}>
-    <Component {...pageProps} />;
-  </main>;
+  return (
+    <main className={`${mcomic.variable} font-sans`}>
+      <Component {...pageProps} />
+    </main>
+  );
 }
