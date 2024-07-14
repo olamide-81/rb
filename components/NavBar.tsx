@@ -8,7 +8,8 @@ import DownloadButton from './buttons/download';
 
 const NavBar = () => {
     return (
-      <div className="flex justify-between py-5 items-center sticky top-0 max-w-screen-xl mx-auto bg-white">
+      <div className="flex justify-between py-5 items-center sticky top-0 max-w-screen-xl mx-auto bg-white z-[1000]">
+
         <Image src={icon} alt="logo" width={30} />
 
         <div className="w-[300px] flex justify-between items-center">
