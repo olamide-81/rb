@@ -28,9 +28,9 @@ const switzer = localFont({
   variable: "--font-switzer",
 });
 export default function App({ Component, pageProps }: AppProps) {
- return (
-   <main className={`${switzer.variable} font-switzer`}>
-     <Component {...pageProps} />;
-   </main>
- );
+  return (
+    <main className={`${switzer.variable} font-sans`}>
+      <Component {...pageProps} />
+    </main>
+  );
 }
