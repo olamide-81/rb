@@ -5,7 +5,7 @@ import localFont from "next/font/local";
 const switzer = localFont({
   src: [
     {
-      path: "../public/font/medium.ttf",
+      path: "../font/Switzer-Medium.otf",
       weight: "500",
       style: "medium",
     },
