@@ -31,35 +31,8 @@ body {
     text-wrap: balance;
   }
 }
-@font-face {
-  font-family: switzerBold;
-  src: url(../public/font/switzer/Switzer-Bold.ttf);
-}
-@font-face {
-  font-family: switzerRegular;
-  src: url(../public/font/switzer/Switzer-Regular.ttf);
-}
-@font-face {
-  font-family: switzerMedium;
-  src: url(../public/font/switzer/Switzer-Medium.ttf);
-}
-@font-face {
-  font-family: switzerSemibold;
-  src: url(../public/font/switzer/Switzer-Semibold.ttf);
-}
-@font-face {
-  font-family: switzerBlack;
-  src: url(../public/font/switzer/Switzer-Black.ttf);
-}
-@font-face {
-  font-family: switzerLight;
-  src: url(../public/font/switzer/Switzer-Light.ttf);
-}
-@font-face {
-  font-family: switzerExtrabold;
-  src: url(../public/font/switzer/Switzer-Extrabold.ttf);
-}
-@font-face {
-  font-family: switzerExtralight;
-  src: url(../public/font/switzer/Switzer-Extralight.ttf);
+
+.bg-hero {
+  background-image: url("../public/assets/img/Modern\ -\ 2.svg");
+  background-repeat: no-repeat;
 }
