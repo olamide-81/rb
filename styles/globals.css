@@ -35,4 +35,5 @@ body {
 .bg-hero {
   background-image: url("../public/assets/img/Modern\ -\ 2.svg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
