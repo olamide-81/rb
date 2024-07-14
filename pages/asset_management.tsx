@@ -67,7 +67,7 @@ const AssetManagememt = () => {
         <footer className="py-[80px] bg-[#F8FAFC] px-[7%] flex justify-center">
           <div className="w-full max-w-[1440px]">
             <Image src={Logo} alt="logo" />
-            <div className="pt-[80px] flex justify-between font-medium">
+            <div className="pt-[80px] flex justify-between font-medium text-[#262626]">
               <div>
                 <h1 className="">SERVICES</h1>
                 <div className="text-[#595959] pt-4">
