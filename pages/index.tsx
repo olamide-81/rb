@@ -1,10 +1,43 @@
+import AssetManagement from "@/components/AssetManagement";
+import EmpoweringKnowledge from "@/components/EmpoweringKnowledge";
+import SectionTwo from "@/components/SectionTwo";
+import TailoredSavings from "@/components/TailoredSavings";
+import ExpertManaged from "@/components/ExpertManaged";
+import FinancialFuture from "@/components/FinancialFuture";
+import HeroComponents from "@/components/HeroComponents";
+import NavBar from "@/components/NavBar";
+import Testimonials from "@/components/Testimonials";
+import { IoIosArrowDown } from "react-icons/io";
+import Image from "next/image";
+import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen font-mc flex-col font-[400] items-center justify-between p-24`}
+      className={`max-w-screen-xl px-10 bg-white min-h-screen font-[600] items-center justify-between font-switzer mx-auto`}
     >
-      Hello
+      <NavBar />
+
+      <HeroComponents />
+
+      <SectionTwo />
+
+      <TailoredSavings />
+
+      <ExpertManaged />
+
+      <EmpoweringKnowledge />
+
+      <AssetManagement />
+
+      <FinancialFuture />
+
+      <Testimonials />
+
+      <FAQ />
+
+      <Footer />
     </main>
   );
 }
