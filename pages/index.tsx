@@ -25,11 +25,11 @@ export default function Home() {
 
       <TailoredSavings />
 
+      <ExpertManaged />
+
       <EmpoweringKnowledge />
 
       <AssetManagement />
-
-      <ExpertManaged />
 
       <FinancialFuture />
 
