@@ -5,12 +5,13 @@ import savings1 from '@/assets/savings1.png';
 import savings2 from '@/assets/savings2.png';
 import savings3 from '@/assets/savings3.png';
 import savings4 from '@/assets/savings4.png';
+import Footer from "@/components/Footer";
 
 const Savings = () => {
     return (
-      <div className="h-screen min-h-screen max-w-screen-xl px-10 w-full">
+      <div className="h-screen max-w-screen-xl mx-auto px-10 w-full">
         <NavBar />
-        <div className="pl-8 flex mt-8 justify-between">
+        <div className="pl-8 flex mt-20 justify-between">
           <div>
             <div className="mb-5">
               <span className="font-switzer text-[15px] font-[500] text-[#3C76E1] ">
@@ -37,6 +38,7 @@ const Savings = () => {
             <Image src={phone} alt="savings" width={250} />
           </div>
         </div>
+        <Footer/>
       </div>
     );
 }

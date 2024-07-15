@@ -15,7 +15,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main
-      className={`max-w-screen-xl px-10 min-h-screen font-[600] items-center justify-between font-switzer mx-auto`}
+      className={`max-w-screen-xl px-10 bg-white min-h-screen font-[600] items-center justify-between font-switzer mx-auto`}
     >
       <NavBar />
 
@@ -25,11 +25,11 @@ export default function Home() {
 
       <TailoredSavings />
 
+      <ExpertManaged />
+
       <EmpoweringKnowledge />
 
       <AssetManagement />
-
-      <ExpertManaged />
 
       <FinancialFuture />
 
