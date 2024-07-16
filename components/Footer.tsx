@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="py-[80px]">
       <Image src={Logo} alt="logo" />
-      <div className="pt-[80px] flex justify-between font-medium">
+      <div className="pt-[80px] font-switzer sm:flex-row flex-col flex justify-between font-[500]">
         <div>
           <h1 className="">SERVICES</h1>
           <div className="text-[#595959] pt-4">
@@ -14,7 +14,7 @@ const Footer = () => {
             <h1 className="pb-3">Community</h1>
           </div>
         </div>
-        <div>
+        <div className="sm:pt-0 pt-6">
           <h1 className="">COMPANY</h1>
           <div className="text-[#595959] pt-4">
             <h1 className="pb-3">About Us</h1>
@@ -23,21 +23,21 @@ const Footer = () => {
             <h1 className="pb-3">Partners</h1>
           </div>
         </div>
-        <div>
+        <div className="sm:pt-0 pt-6">
           <h1 className="">SUPPORT</h1>
           <div className="text-[#595959] pt-4">
             <h1 className="pb-3">Help Centre</h1>
             <h1 className="pb-3">FAQ</h1>
           </div>
         </div>
-        <div>
+        <div className="sm:pt-0 pt-6">
           <h1 className="">LEGAL</h1>
           <div className="text-[#595959] pt-4">
             <h1 className="pb-3">Privacy Policy</h1>
             <h1 className="pb-3">Terms of Service</h1>
           </div>
         </div>
-        <div>
+        <div className="sm:pt-0 pt-6">
           <h1 className="">CONTACT</h1>
           <div className="text-[#595959] pt-4">
             <h1 className="pb-3">X (Twitter)</h1>

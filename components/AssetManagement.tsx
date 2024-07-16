@@ -12,8 +12,8 @@ export default function AssetManagement() {
       <div className="absolute -top-14 items-center justify-center">
         <Image src={tiltedlogo} alt="RAF" />
       </div>
-      <div className="flex items-start justify-between max-w-screen-xl mx-auto w-full">
-        <div className="w-[30%]">
+      <div className="flex md:flex-row flex-col items-start justify-between max-w-screen-xl mx-auto w-full">
+        <div className="md:w-[30%] w-full">
           <h1 className="text-[14px] font-switzer font-[500] text-[#D5E3A1]">
             Coming soon
           </h1>
@@ -29,7 +29,7 @@ export default function AssetManagement() {
             risk tolerance
           </p>
         </div>
-        <div className="w-[70%] px-24">
+        <div className="md:w-[70%] w-full md:px-24 md:pt-0 pt-7">
           <div className="flex items-center space-x-4">
             <div>
               <Image src={customizedfinancial} alt="Asset" />
