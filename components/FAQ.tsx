@@ -59,48 +59,50 @@ const FAQ = () => {
     },
   ];
   return (
-    <div className="flex md:flex-row flex-col justify-between font-switzer">
-      <div className="md:w-[40%] w-full">
-        <h1 className="font-[600] text-[31px] pb-4">
-          Frequently Asked Questions
-        </h1>
-        <div className="pb-3">
-          <p className="text-[#595959] font-[400] font-switzer leading-6">
-            We've Compiled Answers To The Most Common Questions About Rich Aunty
-            Finance. Can't Find What You're Looking For? Our Team is Always Here
-            To Help.
-          </p>
-        </div>
-        <button className="bg-[#3C76E1] text-white py-[10px] px-[16px] rounded-[8px] font-[600] font-switzer">
-          Contact us
-        </button>
-      </div>
-      <div className="md:w-[50%] w-full md:pt-0 pt-10">
-        {sections.map((item, index) => (
-          <div key={index}>
-            <div
-              className={`flex justify-between items-center pb-3 ${
-                index === 0 ? "text-[#3C76E1]" : "text-[#262626]"
-              }`}
-            >
-              <p className="leading-6 w-[80%] font-[400]">{item.title}</p>
-              <button onClick={() => handleOpenDropdown(index)}>
-                {openDropdown === index ? (
-                  <IoIosArrowUp size={20} />
-                ) : (
-                  <IoIosArrowDown size={20} />
-                )}
-              </button>
-            </div>
-            {openDropdown === index && item.description && (
-              <div className="bg-[#F1F5F9] p-4 rounded-[20px] mb-5">
-                <p className="text-[#262626] font-[400] leading-7">
-                  {item.description}
-                </p>
-              </div>
-            )}
+    <div className="py-[80px] max-w-screen-xl px-10 flex justify-center mx-auto">
+      <div className="flex md:flex-row flex-col justify-between font-switzer w-full">
+        <div className="md:w-[40%] w-full">
+          <h1 className="font-[600] text-[31px] pb-4">
+            Frequently Asked Questions
+          </h1>
+          <div className="pb-3">
+            <p className="text-[#595959] font-[400] text-[14px] font-switzer leading-6">
+              We've Compiled Answers To The Most Common Questions About Rich
+              Aunty Finance. Can't Find What You're Looking For? Our Team is
+              Always Here To Help.
+            </p>
           </div>
-        ))}
+          <button className="bg-[#3C76E1] text-white py-[10px] px-[16px] rounded-[8px] font-[500] font-switzer">
+            Contact us
+          </button>
+        </div>
+        <div className="md:w-[50%] w-full md:pt-0 pt-10 text-[14px]">
+          {sections.map((item, index) => (
+            <div key={index}>
+              <div
+                className={`flex justify-between items-center pb-3 ${
+                  index === 0 ? "text-[#3C76E1]" : "text-[#262626]"
+                }`}
+              >
+                <p className="leading-6 w-[80%] font-[400]">{item.title}</p>
+                <button onClick={() => handleOpenDropdown(index)}>
+                  {openDropdown === index ? (
+                    <IoIosArrowUp size={18} />
+                  ) : (
+                    <IoIosArrowDown size={18} />
+                  )}
+                </button>
+              </div>
+              {openDropdown === index && item.description && (
+                <div className="bg-[#F1F5F9] p-4 rounded-[20px] mb-5">
+                  <p className="text-[#262626] font-[400] leading-7">
+                    {item.description}
+                  </p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

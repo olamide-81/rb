@@ -1,15 +1,15 @@
+import Image from "next/image";
 import React from "react";
-import tiltedlogo from "@/assets/tiltedlogo.svg";
+import tiltedlogo from "@/assets/raf.svg";
 import customizedfinancial from "@/assets/customizedfinancial.svg";
 import financialmanager from "@/assets/financialmanager.svg";
 import roi from "@/assets/roiforecasting.svg";
 import smartsavings from "@/assets/smartsavings.svg";
-import Image from "next/image";
 
 export default function AssetManagement() {
   return (
-    <div className="bg-assetmanagementbg bg-cover w-[100%] mt-24 relative py-32 px-32">
-      <div className="absolute -top-14 items-center justify-center">
+    <div className="bg-assetmanagementbg bg-cover w-full relative py-32 px-10">
+      <div className="absolute -top-14 left-1/2 transform -translate-x-1/2 items-center justify-center">
         <Image src={tiltedlogo} alt="RAF" />
       </div>
       <div className="flex md:flex-row flex-col items-start justify-between max-w-screen-xl mx-auto w-full">
@@ -17,10 +17,10 @@ export default function AssetManagement() {
           <h1 className="text-[14px] font-switzer font-[500] text-[#D5E3A1]">
             Coming soon
           </h1>
-          <h1 className="text-[31px] text-[#fff] capitalize font-[500] font-switzer">
+          <h1 className="text-[31px] text-white capitalize font-[500] font-switzer">
             Personalized
           </h1>
-          <h1 className="text-[31px] text-[#fff] capitalize font-[500] font-switzer -mt-3">
+          <h1 className="text-[31px] text-white capitalize font-[500] font-switzer -mt-3">
             asset management
           </h1>
           <p className="text-[14px] font-switzer font-[400] text-white mt-2">
