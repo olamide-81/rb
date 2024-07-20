@@ -9,7 +9,7 @@ const NavBar = () => {
     <div className="flex justify-between text-white py-5 px-10 items-center w-full mx-auto">
       <Image src={icon} alt="logo" width={50} />
 
-      <div className="w-[300px] flex justify-between items-center">
+      <div className="w-[300px] sm:flex hidden justify-between items-center">
         <Link href="#" className="flex items-center space-x-2">
           <span className="font-switzer font-[500] leading-[15px] text-[14px]">
             Services
@@ -30,8 +30,9 @@ const NavBar = () => {
           </span>
         </Link>
       </div>
-
-      <DownloadButton />
+      <div className="sm:block hidden">
+        <DownloadButton />
+      </div>
     </div>
   );
 };
