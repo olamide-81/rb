@@ -12,7 +12,7 @@ export default function EmpoweringKnowledge() {
         <h1 className="text-[31px] text-[#262626] capitalize font-[500] font-switzer -mt-4">
           Confident Financial Decisions
         </h1>
-        <p className="text-[#595959] font-[400] text-[13px] font-switzer mt-4 w-[50%]">
+        <p className="text-[#595959] font-[400] text-[13px] font-switzer mt-4 sm:w-[50%] w-[80%]">
           Access a wealth of financial wisdom through our educational resources.
           From webinars to articles, gain insights on budgeting, investing, and
           more. Equip yourself with the knowledge to make informed financial
