@@ -13,7 +13,7 @@ const Savings = () => {
         <NavBar style={{
             color: "#262626",
         }} />
-        <div className="pl-8 flex mt-20 justify-between">
+        <div className="sm:pl-8 pl-0 flex mt-20 justify-between">
           <div>
             <div className="mb-5">
               <span className="font-switzer text-[15px] font-[500] text-[#3C76E1] ">
@@ -24,7 +24,7 @@ const Savings = () => {
               </h2>
               <span className="text-[#595959] leading-[25px] font-[400] text-[15px] ">
                 Innovative tools and strategies to turbocharge your savings,
-                turning <br /> small steps into giant leaps towards your dreams"
+                turning <br className="hidden md:block" /> small steps into giant leaps towards your dreams"
               </span>
             </div>
 
@@ -36,7 +36,7 @@ const Savings = () => {
             </div>
           </div>
 
-          <div className="">
+          <div className="hidden md:block">
             <Image src={phone} alt="savings" width={250} />
           </div>
         </div>

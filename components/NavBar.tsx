@@ -14,6 +14,7 @@ import { FiInstagram } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 import { switzer } from "@/pages/_app";
 import Logo from "./Logo";
+import SidebarIcon from "./SidebarIcon";
 
 const NavBar = ({ style }: { style?: CSSProperties }) => {
 
@@ -86,7 +87,7 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
   return (
     <div
       style={style}
-      className="flex justify-between text-white py-5 px-10 items-center w-full mx-auto  max-w-screen-xl"
+      className="flex justify-between text-white py-5 px-2 items-center w-full mx-auto  max-w-screen-xl"
     >
 
       <Logo color={style?.color} size={50} />      
@@ -151,7 +152,7 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
         onClick={() => setOpenSize(true)}
         className="sm:hidden block cursor-pointer"
       >
-        <Image alt={"sidebar"} width={24} src={side} />
+        <SidebarIcon color={style?.color} />
       </div>
 
       <Modal
@@ -164,7 +165,7 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
         onClose={() => setOpenSize(false)}
       >
         <div className="w-[340px] outline-none min-w-[280px] ex-3sm:w-full right-0 bg-[#fff] px-6 py-4 fixed z-[100] top-0 min-h-screen">
-          <div className="justify-end mb-8 md:hidden w-full py-5 flex">
+          <div className="justify-end mb-4 md:hidden w-full py-5 flex">
             <MdClose
               onClick={() => setOpenSize(false)}
               size={24}
