@@ -6,7 +6,7 @@ import DownloadButton from "./buttons/download";
 
 const NavBar = () => {
   return (
-    <div className="flex justify-between text-white py-5 px-10 items-center w-full mx-auto">
+    <div className="flex justify-between text-white py-5 px-10 items-center w-full mx-auto  max-w-screen-xl">
       <Image src={icon} alt="logo" width={50} />
 
       <div className="w-[300px] sm:flex hidden justify-between items-center">
