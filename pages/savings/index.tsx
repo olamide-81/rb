@@ -10,7 +10,9 @@ import Footer from "@/components/Footer";
 const Savings = () => {
     return (
       <div className="h-screen max-w-screen-xl mx-auto px-10 w-full">
-        <NavBar />
+        <NavBar style={{
+            color: "#262626",
+        }} />
         <div className="pl-8 flex mt-20 justify-between">
           <div>
             <div className="mb-5">

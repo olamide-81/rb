@@ -1,5 +1,4 @@
 import Image from "next/image";
-import icon from "@/assets/whitelogo.svg";
 import Link from "next/link";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DownloadButton from "./buttons/download";
@@ -7,22 +6,22 @@ import investmentIcon from '@/assets/investmenticon.svg';
 import assetIcon from '@/assets/assetIcon.svg';
 import savingsIcon from '@/assets/savingIcon.svg';
 import communityIcon from '@/assets/communityIcon.svg';
-import { useEffect, useState } from "react";
+import { CSSProperties, useEffect, useState } from "react";
 import side from "../assets/sidebar.svg";
 import { Modal } from "@mui/material";
 import { MdClose } from "react-icons/md";
 import { FiInstagram } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 import { switzer } from "@/pages/_app";
+import Logo from "./Logo";
 
-const NavBar = () => {
+const NavBar = ({ style }: { style?: CSSProperties }) => {
 
   const [isOpen, setIsOpen] = useState({ services: false, company: false });
-  
+
   const [openSize, setOpenSize] = useState(false);
 
   useEffect(() => {
-
     const event = () => {
       setIsOpen({ services: false, company: false });
     };
@@ -34,60 +33,63 @@ const NavBar = () => {
     };
   }, []);
 
+  const services = (placement: "navbar" | "sidebar" = "navbar") => (
+    <ul
+      style={{
+        left: placement === "navbar" ? "-100%" : "-20px",
+      }}
+      onClick={(e) => e.stopPropagation()}
+      className="absolute top-[40px] p-3 z-10 border border-[#0000000D] border-solid w-[280px] bg-white rounded-[24px] space-y-1"
+    >
+      <li className="">
+        <Link
+          className="py-3 px-4 rounded-[12px] hover:bg-[#3C76E10F] text-[#262626] flex items-center space-x-2 font-[500] text-[14px] "
+          href="#"
+        >
+          <Image src={investmentIcon} width={24} alt="investment" />{" "}
+          <span>Investment</span>
+        </Link>
+      </li>
 
-  const services = (placement: 'navbar' | 'sidebar' = 'navbar') => (
-            <ul
-              style={{
-                left: placement === "navbar" ? "-100%" : "-20px",
-              }}
-              onClick={(e) => e.stopPropagation()}
-              className="absolute top-[40px] p-3 z-10 border border-[#0000000D] border-solid w-[280px] bg-white rounded-[24px] space-y-1"
-            >
-              <li className="">
-                <Link
-                  className="py-3 px-4 rounded-[12px] hover:bg-[#3C76E10F] text-[#262626] flex items-center space-x-2 font-[500] text-[14px] "
-                  href="#"
-                >
-                  <Image src={investmentIcon} width={24} alt="investment" />{" "}
-                  <span>Investment</span>
-                </Link>
-              </li>
+      <li className="">
+        <Link
+          className="py-3 px-4 rounded-[12px] hover:bg-[#3C76E10F] text-[#262626] flex items-center space-x-2 font-[500] text-[14px] "
+          href="#"
+        >
+          <Image src={assetIcon} width={24} alt="Asset Management" />{" "}
+          <span>Asset Management</span>
+        </Link>
+      </li>
 
-              <li className="">
-                <Link
-                  className="py-3 px-4 rounded-[12px] hover:bg-[#3C76E10F] text-[#262626] flex items-center space-x-2 font-[500] text-[14px] "
-                  href="#"
-                >
-                  <Image src={assetIcon} width={24} alt="Asset Management" />{" "}
-                  <span>Asset Management</span>
-                </Link>
-              </li>
+      <li className="">
+        <Link
+          className="py-3 px-4 rounded-[12px] hover:bg-[#3C76E10F] text-[#262626] flex items-center space-x-2 font-[500] text-[14px] "
+          href="#"
+        >
+          <Image src={savingsIcon} width={24} alt="Savings" />{" "}
+          <span>Savings</span>
+        </Link>
+      </li>
 
-              <li className="">
-                <Link
-                  className="py-3 px-4 rounded-[12px] hover:bg-[#3C76E10F] text-[#262626] flex items-center space-x-2 font-[500] text-[14px] "
-                  href="#"
-                >
-                  <Image src={savingsIcon} width={24} alt="Savings" />{" "}
-                  <span>Savings</span>
-                </Link>
-              </li>
-
-              <li className="">
-                <Link
-                  className="py-3 px-4 rounded-[12px] hover:bg-[#3C76E10F] text-[#262626] flex items-center space-x-2 font-[500] text-[14px] "
-                  href="#"
-                >
-                  <Image src={communityIcon} width={24} alt="Community" />{" "}
-                  <span>Community</span>
-                </Link>
-              </li>
-            </ul>
-          )
+      <li className="">
+        <Link
+          className="py-3 px-4 rounded-[12px] hover:bg-[#3C76E10F] text-[#262626] flex items-center space-x-2 font-[500] text-[14px] "
+          href="#"
+        >
+          <Image src={communityIcon} width={24} alt="Community" />{" "}
+          <span>Community</span>
+        </Link>
+      </li>
+    </ul>
+  );
 
   return (
-    <div className="flex justify-between text-white py-5 px-10 items-center w-full mx-auto  max-w-screen-xl">
-      <Image src={icon} alt="logo" width={50} />
+    <div
+      style={style}
+      className="flex justify-between text-white py-5 px-10 items-center w-full mx-auto  max-w-screen-xl"
+    >
+
+      <Logo color={style?.color} size={50} />      
 
       <div className="w-[300px] relative sm:flex hidden justify-between items-center">
         <div
@@ -214,7 +216,7 @@ const NavBar = () => {
                 <FaChevronDown className="text-[14px] cursor-pointer" />
               )}
 
-              {isOpen.company && services('sidebar')}
+              {isOpen.company && services("sidebar")}
             </div>
 
             <Link onClick={() => setOpenSize(false)} href="#">
