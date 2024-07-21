@@ -7,6 +7,7 @@ import MemberTwo from "@/assets/member2.svg";
 import MemberThree from "@/assets/member3.svg";
 
 const FinancialFuture = () => {
+  
   return (
     <div className="w-full px-10 bg-[#F9FAFB] mt-32 mx-auto">
       <div className="max-w-[600px] w-full mx-auto">
