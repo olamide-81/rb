@@ -17,7 +17,7 @@ import FinancialGoals from "@/components/FinancialGoal";
 export default function Home() {
   return (
     <main className="bg-[#F9FAFB] min-h-screen font-[600] flex flex-col items-center font-switzer">
-      <div className="home-bg-hero w-full">
+      <div className="home-bg-hero w-full items-center justify-center flex flex-col">
         <NavBar />
         <HeroComponents />
       </div>
