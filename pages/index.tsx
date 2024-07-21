@@ -7,36 +7,29 @@ import FinancialFuture from "@/components/FinancialFuture";
 import HeroComponents from "@/components/HeroComponents";
 import NavBar from "@/components/NavBar";
 import Testimonials from "@/components/Testimonials";
-import { IoIosArrowDown } from "react-icons/io";
-import Image from "next/image";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import RealTimeProgress from "@/components/RealTimeProgress";
+import AchieveMore from "@/components/AchieveMore";
+import SecureFuture from "@/components/SecureFuture";
+import FinancialGoals from "@/components/FinancialGoal";
 
 export default function Home() {
   return (
-    <main
-      className={`max-w-screen-xl px-10 bg-white min-h-screen font-[600] items-center justify-between font-switzer mx-auto`}
-    >
-      <NavBar />
-
-      <HeroComponents />
-
+    <main className="bg-[#F9FAFB] min-h-screen font-[600] flex flex-col items-center font-switzer">
+      <div className="home-bg-hero w-full">
+        <NavBar />
+        <HeroComponents />
+      </div>
       <SectionTwo />
-
-      <TailoredSavings />
-
-      <ExpertManaged />
-
-      <EmpoweringKnowledge />
-
+      <RealTimeProgress />
+      <AchieveMore />
+      <SecureFuture />
       <AssetManagement />
-
       <FinancialFuture />
-
       <Testimonials />
-
       <FAQ />
-
+      <FinancialGoals />
       <Footer />
     </main>
   );

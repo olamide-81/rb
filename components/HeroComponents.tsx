@@ -1,53 +1,47 @@
 import React from "react";
 import { BiLogoPlayStore } from "react-icons/bi";
 import { FaApple } from "react-icons/fa";
-import { RiShieldFlashLine } from "react-icons/ri";
-import community from "@/assets/community.svg"
 import Image from "next/image";
+import Phone from "@/assets/phone-hero.svg";
 
 export default function HeroComponents() {
   return (
-    <div className="max-w-screen-xl mx-auto w-full mt-10">
-      <div>
-        <h1 className="text-[49px] font-[500] font-switzer text-[#262626]">
+    <div className="max-w-screen-xl px-10 w-full mt-10">
+      <div className="px-10 text-center text-white">
+        <h1 className="sm:text-[49px] text-[40px] font-[500] font-switzer">
           Turn Your Financial
         </h1>
-        <h1 className="text-[49px] font-[500] font-switzer text-[#262626] -mt-6">
+        <h1 className="sm:text-[49px] text-[40px] sm:pt-0 pt-4 font-[500] font-switzer -mt-6">
           Dreams Into Reality
         </h1>
-        <p className="font-switzer font-[400] mt-4 w-[50%] text-[#595959]">
-          Take control of your finances like never before. Combine powerful
-          saving tools, educational resources, and exclusive investment
-          opportunities to help you build and grow your wealth
-        </p>
-
-        <div className="flex items-center space-x-4 mt-10">
-          <div className="bg-[#3C76E1] cursor-pointer px-4 py-3 rounded-lg flex items-center space-x-2">
-            <div className="flex items-center space-x-1">
-              <FaApple color="#fff" />
-              <h1 className="text-white font-[200]">|</h1>
-              <BiLogoPlayStore color="#fff" />
+        <div className="flex justify-center">
+          <p className="font-switzer font-[400] mt-4 md:w-[50%] sm:w-[70%] w-[80%]">
+            Take control of your finances like never before. Combine powerful
+            saving tools, educational resources, and exclusive investment
+            opportunities to help you build and grow your wealth.
+          </p>
+        </div>
+        <div className="flex justify-center">
+          <div className="flex items-center space-x-4 mt-10">
+            <div className="bg-[#3C76E1] cursor-pointer px-4 py-3 rounded-lg flex items-center space-x-2">
+              <div className="flex items-center space-x-1">
+                <FaApple color="#fff" />
+                <h1 className="text-white font-[200]">|</h1>
+                <BiLogoPlayStore color="#fff" />
+              </div>
+              <h1 className="text-white font-switzer font-[500]">
+                Download app
+              </h1>
             </div>
-            <h1 className="text-white font-switzer font-[500]">Download app</h1>
-          </div>
-          <div className="border-[#3C76E1] cursor-pointer border px-4 py-3 rounded-lg">
-            <h1 className="text-[#3C76E1] font-switzer font-[500]">
-              Join community
-            </h1>
+            <div className="bg-white cursor-pointer border px-4 py-3 rounded-lg">
+              <h1 className="text-[#262626] font-switzer font-[500]">
+                Join community
+              </h1>
+            </div>
           </div>
         </div>
-
-        <div className="flex items-center justify-between mt-20">
-          <div className="flex items-center space-x-2">
-            <RiShieldFlashLine size={28} />
-            <h1 className="font-switzer font-[400] text-[14px]">
-              Backed by NDIC
-            </h1>
-          </div>
-          <div>
-            <Image src={community} alt="community" className="w-[50%]"/>
-            <h1 className="text-[14px] text-[#595959] font-switzer font-[500]">1k+ Community members</h1>
-          </div>
+        <div className="flex justify-center pt-10">
+          <Image src={Phone} width={300} alt="phone" />
         </div>
       </div>
     </div>
