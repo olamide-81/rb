@@ -10,18 +10,18 @@ const Footer = () => {
             <div>
               <h1 className="text-[#262626]">SERVICES</h1>
               <div className="text-[#595959] pt-4 text-[14px]">
-                <h1 className="pb-3">RAF Plan</h1>
-                <h1 className="pb-3">RAF Vault</h1>
-                <h1 className="pb-3">Asset Management</h1>
+                <h1 className="pb-3 cursor-pointer">RAF Plan</h1>
+                <h1 className="pb-3 cursor-pointer">RAF Vault</h1>
+                <h1 className="pb-3 cursor-pointer">Asset Management</h1>
               </div>
             </div>
             <div className="sm:pt-0 pt-6">
               <h1 className="text-[#262626]">COMPANY</h1>
               <div className="text-[#52525B] font-[400] pt-4 text-[14px]">
-                <h1 className="pb-3">About Us</h1>
-                <h1 className="pb-3">Blog</h1>
-                <h1 className="pb-3">Event</h1>
-                <h1 className="pb-3">Partners</h1>
+                <h1 className="pb-3 cursor-pointer">About Us</h1>
+                <h1 className="pb-3 cursor-pointer">Blog</h1>
+                <h1 className="pb-3 cursor-pointer">Event</h1>
+                <h1 className="pb-3 cursor-pointer">Partners</h1>
               </div>
             </div>
             <div className="sm:pt-0 pt-6">
@@ -34,17 +34,17 @@ const Footer = () => {
             <div className="sm:pt-0 pt-6">
               <h1 className="text-[#262626]">LEGAL</h1>
               <div className="text-[#52525B] pt-4 font-[400] text-[14px]">
-                <h1 className="pb-3">Privacy Policy</h1>
-                <h1 className="pb-3">Terms of Service</h1>
+                <h1 className="pb-3 cursor-pointer">Privacy Policy</h1>
+                <h1 className="pb-3 cursor-pointer">Terms of Service</h1>
               </div>
             </div>
             <div className="sm:pt-0 pt-6">
               <h1 className="text-[#262626]">CONTACT</h1>
               <div className="text-[#52525B] pt-4 text-[14px] font-[400]">
-                <h1 className="pb-3">X (Twitter)</h1>
-                <h1 className="pb-3">Instagram</h1>
-                <h1 className="pb-3">LinkedIn</h1>
-                <h1 className="pb-3">Facebook</h1>
+                <h1 className="pb-3 cursor-pointer">X (Twitter)</h1>
+                <h1 className="pb-3 cursor-pointer">Instagram</h1>
+                <h1 className="pb-3 cursor-pointer">LinkedIn</h1>
+                <h1 className="pb-3 cursor-pointer">Facebook</h1>
               </div>
             </div>
           </div>

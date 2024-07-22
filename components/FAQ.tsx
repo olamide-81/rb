@@ -18,46 +18,36 @@ const FAQ = () => {
     {
       title: "What's the minimum amount I need to start investing with RAF?",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
+        "For RAF Vault, each plan has a different minimum amount. For RAF Plan, the minimum is $5.",
     },
     {
       title: "Can I withdraw my money at any time?",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
+        "Yes, but withdrawals take 48 hours. For RAF Vaults, there is a fee for withdrawing before the maturity date.",
     },
-    {
-      title: "How are the investment portfolios created and managed?",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
-    },
-    {
-      title: "What fees does RAF charge for its services?",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
-    },
+    // {
+    //   title: "How are the investment portfolios created and managed?",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
+    // },
     {
       title: "How do I get started with Rich Aunty Finance?",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
-    },
-    {
-      title:
-        "What makes RAF different from traditional banks or other fintech apps?",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
+        "You can download our app to get started, or contact us on WhatsApp to begin with RAF Vault.",
     },
     {
       title:
         "Can I speak to a financial advisor directly if I have specific questions?",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
+        "Yes, we provide access to a financial advisor for you here on RAF.",
     },
     {
       title: "How does RAF's asset management feature work?",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
+        "It is based on your user profile, providing curated options specifically for you to help grow your finances. It covers various steps across all areas of your financial life.",
     },
   ];
+
   return (
     <div className="py-[80px] max-w-screen-xl px-10 flex justify-center mx-auto">
       <div className="flex md:flex-row flex-col justify-between font-switzer w-full">
@@ -78,10 +68,14 @@ const FAQ = () => {
         </div>
         <div className="md:w-[50%] w-full md:pt-0 pt-10 text-[14px]">
           {sections.map((item, index) => (
-            <div key={index}>
+            <div
+              key={index}
+              className="cursor-pointer"
+              onClick={() => handleOpenDropdown(index)}
+            >
               <div
                 className={`flex justify-between items-center pb-3 ${
-                  index === 0 ? "text-[#3C76E1]" : "text-[#262626]"
+                  index === openDropdown ? "text-[#3C76E1]" : "text-[#262626]"
                 }`}
               >
                 <p className="leading-6 w-[80%] font-[400]">{item.title}</p>

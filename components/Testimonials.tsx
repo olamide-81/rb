@@ -30,10 +30,9 @@ const Testimonials = () => {
       >
         <SwiperSlide>
           <p className="text-[16px] font-switzer font-[400] leading-[30px] text-center text-[#262626] ">
-            “After countless failed ventures, RAF's partnership investment was a
-            game-changer for me. I not only regained my investment footing but
-            discovered numerous lucrative opportunities. The consistency and
-            support have been impeccable!”
+            “My Experience with RAF has been amazing, superb, phenomenal to say
+            the least, Where professionalism meets Character, Excellence and
+            Integrity!”
           </p>
 
           <div className="flex items-center flex-col space-y-2 w-[400px] mx-auto mt-7">
@@ -41,41 +40,37 @@ const Testimonials = () => {
               <Image src={profile} alt={"user"} width={100} />
             </div>
             <h4 className="font-[600] text-center font-switzer text-[16px] text-[#262626]">
-              Name
+              Q.O.O
             </h4>
             <span className="font-[400] text-[#595959] text-center leading-[20px] font-switzer ">
-              CEO Of Something Something
+              Customer
             </span>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <p className="text-[16px] font-switzer font-[400] leading-[30px] text-center text-[#262626] ">
-            “After countless failed ventures, RAF's partnership investment was a
-            game-changer for me. I not only regained my investment footing but
-            discovered numerous lucrative opportunities. The consistency and
-            support have been impeccable!”
+            “I am so grateful for RAF because I never thought I could keep money
+            somewhere and not touch it, With the incessant pressures and
+            vicissitudes of our day to day life.”
           </p>
-
           <div className="flex items-center flex-col space-y-2 w-[400px] mx-auto mt-7">
             <div className="rounded-[8px] overflow-hidden h-[100px] w-[100px]">
               <Image src={profile} alt={"user"} width={100} />
             </div>
             <h4 className="font-[600] text-center font-switzer text-[16px] text-[#262626]">
-              Name
+              A.A
             </h4>
             <span className="font-[400] text-[#595959] text-center leading-[20px] font-switzer ">
-              CEO Of Something Something
+             Customer
             </span>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <p className="text-[16px] font-switzer font-[400] leading-[30px] text-center text-[#262626] ">
-            “After countless failed ventures, RAF's partnership investment was a
-            game-changer for me. I not only regained my investment footing but
-            discovered numerous lucrative opportunities. The consistency and
-            support have been impeccable!”
+            “The ROI feel's like free money, everytime I get the alert I am
+            filled with so much Joy and I am happy.”
           </p>
 
           <div className="flex items-center flex-col space-y-2 w-[400px] mx-auto mt-7">
@@ -83,20 +78,19 @@ const Testimonials = () => {
               <Image src={profile} alt={"user"} width={100} />
             </div>
             <h4 className="font-[600] text-center font-switzer text-[16px] text-[#262626]">
-              Name
+              C.P
             </h4>
             <span className="font-[400] text-[#595959] text-center leading-[20px] font-switzer ">
-              CEO Of Something Something
+              Customer
             </span>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <p className="text-[16px] font-switzer font-[400] leading-[30px] text-center text-[#262626] ">
-            “After countless failed ventures, RAF's partnership investment was a
-            game-changer for me. I not only regained my investment footing but
-            discovered numerous lucrative opportunities. The consistency and
-            support have been impeccable!”
+            “With RAF there is always timely ROI, I wish I came across RAF
+            earlier I would not have lost so much money on investments that
+            failed”
           </p>
 
           <div className="flex items-center flex-col space-y-2 w-[400px] mx-auto mt-7">
@@ -104,10 +98,10 @@ const Testimonials = () => {
               <Image src={profile} alt={"user"} width={100} />
             </div>
             <h4 className="font-[600] text-center font-switzer text-[16px] text-[#262626]">
-              Name
+              J.O
             </h4>
             <span className="font-[400] text-[#595959] text-center leading-[20px] font-switzer ">
-              CEO Of Something Something
+              Customer
             </span>
           </div>
         </SwiperSlide>
