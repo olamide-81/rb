@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import localFont from "next/font/local";
 
-const switzer = localFont({
+export const switzer = localFont({
   src: [
     {
       path: "../font/Switzer-Medium.otf",
@@ -27,6 +27,7 @@ const switzer = localFont({
   ],
   variable: "--font-switzer",
 });
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={`${switzer.variable} font-sans`}>

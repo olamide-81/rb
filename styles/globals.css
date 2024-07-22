@@ -8,6 +8,12 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.navigate {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  width: 100% !important;
+  max-width: 500px;
+}
+
 .navigate .bullet {
   border-radius: 8px;
   background-color: #fff;
