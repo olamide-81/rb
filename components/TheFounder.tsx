@@ -15,7 +15,7 @@ const TheFounder = () => {
               alt="founder"
               width={400}
               height={400}
-              className="w-[400px]"
+              className="w-[401px]"
             />
             <div className="pl-5 pt-4">
               <h1 className="text-[18px] font-[500]">Dr Sarah Samuel Amana</h1>
