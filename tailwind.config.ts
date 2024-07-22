@@ -7,6 +7,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        "xxd": {
+          max: "1000px"
+        },
+        "mmd": {
+          max: "740px"
+        },
+        "smm": {
+          max: "590px"
+        }
+      },
       fontFamily: {
         switzer: ["var(--font-switzer)"],
       },
