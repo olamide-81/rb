@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="w-full flex justify-center">
         <div className="w-full ">
           <div className="pt-[80px] font-switzer sm:flex-row flex-col items-start flex justify-between font-[500]">
-            <Image src={Logo} alt="logo" width={50} />
+            <Image src={Logo} alt="logo" className="mb-4" width={50} />
             <div>
               <h1 className="text-[#262626]">SERVICES</h1>
               <div className="text-[#595959] pt-4 text-[14px]">

@@ -16,7 +16,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="pb-3 my-[7em] w-full mx-auto max-w-[700px]">
+    <div className="pb-3 px-10 my-[7em] w-full mx-auto max-w-[700px]">
       <Swiper
         pagination={pagination}
         spaceBetween={20}
@@ -35,7 +35,7 @@ const Testimonials = () => {
             Integrity!”
           </p>
 
-          <div className="flex items-center flex-col space-y-2 w-[400px] mx-auto mt-7">
+          <div className="flex items-center flex-col space-y-2 w-[250px] mx-auto mt-7">
             <div className="rounded-[8px] overflow-hidden h-[100px] w-[100px]">
               <Image src={profile} alt={"user"} width={100} />
             </div>
@@ -73,7 +73,7 @@ const Testimonials = () => {
             filled with so much Joy and I am happy.”
           </p>
 
-          <div className="flex items-center flex-col space-y-2 w-[400px] mx-auto mt-7">
+          <div className="flex items-center flex-col space-y-2 w-[250px] mx-auto mt-7">
             <div className="rounded-[8px] overflow-hidden h-[100px] w-[100px]">
               <Image src={profile} alt={"user"} width={100} />
             </div>
@@ -93,7 +93,7 @@ const Testimonials = () => {
             failed”
           </p>
 
-          <div className="flex items-center flex-col space-y-2 w-[400px] mx-auto mt-7">
+          <div className="flex items-center flex-col space-y-2 w-[250px] mx-auto mt-7">
             <div className="rounded-[8px] overflow-hidden h-[100px] w-[100px]">
               <Image src={profile} alt={"user"} width={100} />
             </div>
@@ -107,7 +107,7 @@ const Testimonials = () => {
         </SwiperSlide>
       </Swiper>
 
-      <div className="navigate mx-auto !w-fit mt-[4em]"></div>
+      <div className="navigate grid gap-4 mx-auto !w-fit mt-[4em]"></div>
     </div>
   );
 };
