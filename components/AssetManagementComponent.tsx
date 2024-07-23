@@ -58,6 +58,7 @@ const features = [
     );
   };
 export default function AssetManagementComponent() {
+
   const [email, setemail] = useState('')
   const [isloading, setisloading] = useState(false)
 
@@ -75,7 +76,7 @@ export default function AssetManagementComponent() {
   }
 
   return (
-    <div className="w-full mx-auto  max-w-screen-xl py-40">
+    <div className="w-full mx-auto max-w-screen-xl py-40">
       <div className="md:flex items-start justify-between md:space-y-0 space-y-14">
         <div className="md:w-[60%] px-10">
           <h1 className="text-[14px] font-switzer font-[400] text-[#D5E3A1]">
