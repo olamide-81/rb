@@ -13,13 +13,13 @@ const Footer = () => {
               <div className=''>
                 <h1 className="text-[#262626]">SERVICES</h1>
                 <div className="text-[#595959] pt-4 text-[14px]">
-                  <Link href="/">
+                  <Link href="/rafplan">
                     <h1 className="pb-3 cursor-pointer">RAF Plan</h1>
                   </Link>
-                  <Link href="/">
+                  <Link href="/rafvault">
                     <h1 className="pb-3 cursor-pointer">RAF Vault</h1>
                   </Link>
-                  <Link href="/">
+                  <Link href="/assetmanagement">
                     <h1 className="pb-3 cursor-pointer">Asset Management</h1>
                   </Link>
                 </div>
@@ -28,10 +28,10 @@ const Footer = () => {
               <div className="">
                 <h1 className="text-[#262626]">COMPANY</h1>
                 <div className="text-[#52525B] font-[400] pt-4 text-[14px]">
-                  <Link href="/">
+                  <Link href="/aboutus">
                     <h1 className="pb-3 cursor-pointer">About Us</h1>
                   </Link>
-                  <Link href="/">
+                  <Link href="/blog">
                     <h1 className="pb-3 cursor-pointer">Blog</h1>
                   </Link>
                 </div>

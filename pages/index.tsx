@@ -48,7 +48,7 @@ export default function Home() {
       <div data-aos="fade-up">
         <SecureFuture />
       </div>
-      <div data-aos="fade-up">
+      <div data-aos="fade-up" className='w-full'>
         <AssetManagement />
       </div>
       <div data-aos="fade-up">
