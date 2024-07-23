@@ -5,17 +5,17 @@ import WEF from "@/assets/wef.svg";
 import Africa from "@/assets/africa.svg";
 const TheFounder = () => {
   return (
-    <div className="pt-[50px] text-[#262626]">
+    <div className="pt-[50px] text-[#262626] md:mx-20">
       <div className="font-switzer">
         <h1 className="text-[18px] font-[500] text-center">Meet The Founder</h1>
-        <div className="pt-10 grid sm:grid-cols-2 grid-cols-1 gap-5 max-w-[900px]">
-          <div>
+        <div className="pt-10 md:flex items-start md:space-y-0 space-y-6">
+          <div className="md:w-[30%]">
             <Image
               src={Founder}
               alt="founder"
-              width={400}
-              height={400}
-              className="w-[401px]"
+              // width={400}
+              // height={400}
+              className=""
             />
             <div className="pl-5 pt-4">
               <h1 className="text-[18px] font-[500]">Dr Sarah Samuel Amana</h1>
@@ -47,7 +47,7 @@ const TheFounder = () => {
               </div>
             </div>
           </div>
-          <div className="text-[#52525B] text-[14px] font-[400]">
+          <div className="text-[#52525B] text-[14px] font-[400] md:w-[50%] px-10">
             <div className="pb-7 leading-7">
               <p>
                 Dr Sarah Samuel Amana is an award winning personal finance

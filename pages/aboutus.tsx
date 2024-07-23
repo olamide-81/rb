@@ -21,6 +21,7 @@ export default function AboutUs() {
       <SetUsApart />
       <TheFounder />
       <StartYourJourney />
+      <Footer/>
     </div>
   );
 }

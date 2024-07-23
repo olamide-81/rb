@@ -51,6 +51,20 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.expandable-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+}
+
+.expandable-content.expanded {
+  max-height: 100px;
+  opacity: 1;
+}
+
+
 .navigate .bullet.swiper-pagination-bullet-active {
   filter: grayscale(0%);
   opacity: 1;
