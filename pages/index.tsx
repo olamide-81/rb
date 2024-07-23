@@ -14,8 +14,10 @@ import AchieveMore from '@/components/AchieveMore'
 import SecureFuture from '@/components/SecureFuture'
 import FinancialGoals from '@/components/FinancialGoal'
 import { Box, Modal } from '@mui/material'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import WaitlistModal from '@/components/WaitlistModal'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Home() {
   const [waitlistmodal, setWaitlistModal] = useState(false)
@@ -23,22 +25,47 @@ export default function Home() {
   const toggleModal = () => {
     setWaitlistModal(!waitlistmodal)
   }
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 })
+  }, [])
+
   return (
     <main className="bg-[#F9FAFB] min-h-screen font-[600] flex flex-col items-center font-switzer">
       <div className="home-bg-hero w-full items-center justify-center flex flex-col">
         <NavBar toggleModal={toggleModal} />
-        <HeroComponents toggleModal={toggleModal}/>
+        <HeroComponents toggleModal={toggleModal} />
       </div>
-      <SectionTwo />
-      <RealTimeProgress />
-      <AchieveMore />
-      <SecureFuture />
-      <AssetManagement />
-      <FinancialFuture toggleModal={toggleModal}/>
-      <Testimonials />
-      <FAQ />
-      <FinancialGoals/>
-      <Footer />
+      <div data-aos="fade-up">
+        <SectionTwo />
+      </div>
+      <div data-aos="fade-up">
+        <RealTimeProgress />
+      </div>
+      <div data-aos="fade-up">
+        <AchieveMore />
+      </div>
+      <div data-aos="fade-up">
+        <SecureFuture />
+      </div>
+      <div data-aos="fade-up">
+        <AssetManagement />
+      </div>
+      <div data-aos="fade-up">
+        <FinancialFuture toggleModal={toggleModal} />
+      </div>
+      <div data-aos="fade-up">
+        <Testimonials />
+      </div>
+      <div data-aos="fade-up">
+        <FAQ />
+      </div>
+      <div data-aos="fade-up" className='w-full'>
+        <FinancialGoals />
+      </div>
+      <div data-aos="fade-up">
+        <Footer />
+      </div>
 
       <Modal
         open={waitlistmodal}
@@ -57,7 +84,6 @@ export default function Home() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            
           }}
         >
           <WaitlistModal />
