@@ -1,8 +1,8 @@
-import Image from "next/image";
-import Founder from "@/assets/founder.svg";
-import Peace from "@/assets/peace.svg";
-import WEF from "@/assets/wef.svg";
-import Africa from "@/assets/africa.svg";
+import Image from 'next/image'
+import Founder from '@/assets/founder.svg'
+import Peace from '@/assets/peace.svg'
+import WEF from '@/assets/wef.svg'
+import Africa from '@/assets/africa.svg'
 const TheFounder = () => {
   return (
     <div className="pt-[50px] text-[#262626] md:mx-20">
@@ -56,7 +56,7 @@ const TheFounder = () => {
                 recognition in high-impact events. Renowned for her passion to
                 empower individuals in making informed financial decisions, she
                 has become a beacon for those aspiring to build generational
-                wealth through sound money management.{" "}
+                wealth through sound money management.{' '}
               </p>
             </div>
             <div className="pb-7 leading-7">
@@ -89,7 +89,7 @@ const TheFounder = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TheFounder;
+export default TheFounder
