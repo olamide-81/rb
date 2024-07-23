@@ -6,7 +6,7 @@ import MemberOne from "@/assets/member1.svg";
 import MemberTwo from "@/assets/member2.svg";
 import MemberThree from "@/assets/member3.svg";
 
-const FinancialFuture = () => {
+const FinancialFuture = ({toggleModal} : {toggleModal?: any}) => {
   
   return (
     <div className="w-full px-10 bg-[#F9FAFB] mt-32 mx-auto">
@@ -14,7 +14,7 @@ const FinancialFuture = () => {
         <h2 className="font-switzer font-[500] text-center text-[30px] text-[#262626] leading-[35px] mb-6">
           Your Financial Future is just <br /> a download away
         </h2>
-        <div className="flex items-center mb-[100px] justify-center">
+        <div onClick={toggleModal} className="flex items-center mb-[100px] justify-center">
           <DownloadButton />
         </div>
         <Image src={phone_half} alt="your phone" className="mx-auto" />
