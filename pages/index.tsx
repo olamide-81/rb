@@ -28,7 +28,7 @@ export default function Home() {
 
   useEffect(() => {
     Aos.init({ duration: 1000 })
-  }, [])
+  }, []);
 
   return (
     <main className="bg-[#F9FAFB] min-h-screen font-[600] flex flex-col items-center font-switzer">

@@ -9,7 +9,7 @@ const StoryAndMission = () => {
               <div className="text-[14px] text-[#52525B] font-[400] leading-7 pb-6">
                 Rich Aunty Finance was born from a simple yet powerful idea:
                 everyone deserves access to smart, goal-oriented savings
-                solutions that actually work. Founded in [year] by a team of
+                solutions that actually work. Founded in 2020 by a team of
                 finance experts and tech innovators, we set out to revolutionize
                 the way people save and achieve their financial dreams.
               </div>
