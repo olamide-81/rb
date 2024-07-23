@@ -1,8 +1,8 @@
-import React from "react";
-import { BiLogoPlayStore } from "react-icons/bi";
-import { FaApple } from "react-icons/fa";
-import Image from "next/image";
-import Phone from "@/assets/phone-hero.svg";
+import React from 'react'
+import { BiLogoPlayStore } from 'react-icons/bi'
+import { FaApple } from 'react-icons/fa'
+import Image from 'next/image'
+import Phone from '@/assets/phone-hero.svg'
 
 export default function HeroComponents() {
   return (
@@ -35,7 +35,7 @@ export default function HeroComponents() {
             </div>
             <div className="bg-white cursor-pointer border px-4 py-3 rounded-lg">
               <h1 className="text-[#262626] font-switzer font-[500]">
-                Join community
+                Community
               </h1>
             </div>
           </div>
@@ -45,5 +45,5 @@ export default function HeroComponents() {
         </div>
       </div>
     </div>
-  );
+  )
 }
