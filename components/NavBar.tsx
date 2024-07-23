@@ -48,7 +48,7 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
           href="#"
         >
           <Image src={investmentIcon} width={24} alt="investment" />{" "}
-          <span>Investment</span>
+          <span>RAF Plan</span>
         </Link>
       </li>
 
@@ -58,7 +58,7 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
           href="#"
         >
           <Image src={assetIcon} width={24} alt="Asset Management" />{" "}
-          <span>Asset Management</span>
+          <span>RAF Vault</span>
         </Link>
       </li>
 
@@ -67,8 +67,8 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
           className="py-3 px-4 rounded-[12px] hover:bg-[#3C76E10F] text-[#262626] flex items-center space-x-2 font-[500] text-[14px] "
           href="#"
         >
-          <Image src={savingsIcon} width={24} alt="Savings" />{" "}
-          <span>Savings</span>
+          <Image src={assetIcon} width={24} alt="Savings" />{" "}
+          <span>Asset Management</span>
         </Link>
       </li>
 
@@ -81,6 +81,37 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
           <span>Community</span>
         </Link>
       </li>
+    </ul>
+  );
+
+  const company = (placement: "navbar" | "sidebar" = "navbar") => (
+    <ul
+      style={{
+        left: placement === "navbar" ? "-100%" : "-20px",
+      }}
+      onClick={(e) => e.stopPropagation()}
+      className="absolute top-[40px] p-3 z-10 border border-[#0000000D] border-solid w-[280px] bg-white rounded-[24px] space-y-1"
+    >
+      <li className="">
+        <Link
+          className="py-3 px-4 rounded-[12px] hover:bg-[#3C76E10F] text-[#262626] flex items-center space-x-2 font-[500] text-[14px] "
+          href="#"
+        >
+          <Image src={investmentIcon} width={24} alt="investment" />{" "}
+          <span>About us</span>
+        </Link>
+      </li>
+
+      <li className="">
+        <Link
+          className="py-3 px-4 rounded-[12px] hover:bg-[#3C76E10F] text-[#262626] flex items-center space-x-2 font-[500] text-[14px] "
+          href="#"
+        >
+          <Image src={assetIcon} width={24} alt="Asset Management" />{" "}
+          <span>Blog</span>
+        </Link>
+      </li>
+
     </ul>
   );
 
@@ -135,7 +166,7 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
             <FaChevronDown className="text-[14px] cursor-pointer" />
           )}
 
-          {isOpen.company && services()}
+          {isOpen.company && company()}
         </div>
 
         <Link href="#" className="flex items-center space-x-2">
