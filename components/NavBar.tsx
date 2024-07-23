@@ -16,7 +16,7 @@ import { switzer } from "@/pages/_app";
 import Logo from "./Logo";
 import SidebarIcon from "./SidebarIcon";
 
-const NavBar = ({ style }: { style?: CSSProperties }) => {
+const NavBar = ({ style, toggleModal }: { style?: CSSProperties, toggleModal?: any; }) => {
 
   const [isOpen, setIsOpen] = useState({ services: false, company: false });
 
@@ -175,7 +175,7 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
           </span>
         </Link>
       </div>
-      <div className="sm:block hidden">
+      <div className="sm:block hidden" onClick={toggleModal}>
         <DownloadButton />
       </div>
 
@@ -248,7 +248,7 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
                 <FaChevronDown className="text-[14px] cursor-pointer" />
               )}
 
-              {isOpen.company && services("sidebar")}
+              {isOpen.company && company("sidebar")}
             </div>
 
             <Link onClick={() => setOpenSize(false)} href="/contactus">
@@ -270,7 +270,7 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
             </div>
           </div>
 
-          <div className="w-full">
+          <div className="w-full" onClick={toggleModal}>
             <DownloadButton />
           </div>
         </div>

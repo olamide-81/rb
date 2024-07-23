@@ -4,7 +4,6 @@ import Image from 'next/image'
 import savings1 from '@/assets/savings1.svg'
 import savings2 from '@/assets/savings2.svg'
 import savings3 from '@/assets/savings3.svg'
-import savings4 from '@/assets/savings4.png'
 import Footer from '@/components/Footer'
 
 const Savings = () => {

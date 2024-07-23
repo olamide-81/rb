@@ -4,7 +4,7 @@ import { FaApple } from "react-icons/fa";
 import Image from "next/image";
 import Phone from "@/assets/phone-hero.svg";
 
-export default function HeroComponents() {
+export default function HeroComponents({toggleModal}) {
   return (
     <div className="max-w-screen-xl px-10 w-full mt-10">
       <div className="px-10 text-center text-white">
@@ -23,7 +23,7 @@ export default function HeroComponents() {
         </div>
         <div className="flex justify-center">
           <div className="md:flex items-center md:space-x-4 md:space-y-0 space-y-4 mt-10">
-            <div className="bg-[#3C76E1] cursor-pointer px-4 py-3 rounded-lg flex items-center space-x-2">
+            <div onClick={toggleModal} className="bg-[#3C76E1] cursor-pointer px-4 py-3 rounded-lg flex items-center space-x-2">
               <div className="flex items-center space-x-1">
                 <FaApple color="#fff" />
                 <h1 className="text-white font-[200]">|</h1>
