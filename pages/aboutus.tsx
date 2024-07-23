@@ -14,7 +14,7 @@ export default function AboutUs() {
   return (
     <div className="min-h-screen bg-[#F9FAFB] text-[#262626] px-10 w-full">
       <NavBar style={{
-          color: "#262626"
+         color: "#262626"
       }} />
       <AboutUsHeader />
       <StoryAndMission />
