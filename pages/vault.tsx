@@ -48,7 +48,7 @@ const Vault = () => {
         </section>
 
         <section className="mt-32 xd:grid-cols-1 grid-cols-2 grid gap-3 items-start justify-between">
-          <h2 className="text-[18px] xd:mb-4 text-[#262626] font-switzer block w-1/2 font-[400]">
+          <h2 className="text-[18px] xd:mb-4 text-[#262626] font-switzer block w-1/2 font-[400] xd:w-full">
             How does RAF Vault Fits into the RAF Ecosystem?
           </h2>
 
@@ -73,7 +73,8 @@ const Vault = () => {
 
         <section className="mt-32 p-7 smm:px-4 w-full rounded-[32px] bg-[-63px_0px] smm:bg-[-94px_0px] bg-bgplans bg-no-repeat mmd:bg-cover">
           <h2 className="text-[18px] mb-10 text-center text-[#262626] font-switzer font-[500]">
-            the Perfect RAF Vault Plan <br /> for Your Financial Ambitions
+            the Perfect RAF Vault Plan <br className="hidden md:block" /> for
+            Your Financial Ambitions
           </h2>
 
           <div className="grid grid-cols-3 smm:grid-cols-1 items-center gap-4 mmd:grid-cols-2">
@@ -96,7 +97,8 @@ const Vault = () => {
             </h2>
             <span className="text-[#52525B] text-[15px] font-[400]">
               By choosing to lock your savings in RAF Vault, you're making a{' '}
-              <br /> smart financial decision. Here's why:
+              <br className="hidden md:block" /> smart financial decision.
+              Here's why:
             </span>
           </div>
 
@@ -106,16 +108,16 @@ const Vault = () => {
             }}
             className="grid items-center gap-5"
           >
-            <div className="">
+            <div className="w-full flex justify-center">
               <Image src={power1} alt={'power 1'} />
             </div>
-            <div className="w-full relative">
+            <div className="w-full flex justify-center">
               <Image src={power2} alt={'power 2'} />
             </div>
-            <div className="">
+            <div className="w-full flex justify-center">
               <Image src={power3} alt={'power 3'} />
             </div>
-            <div className="">
+            <div className="w-full flex justify-center">
               <Image src={power4} alt={'power 4'} />
             </div>
           </div>
