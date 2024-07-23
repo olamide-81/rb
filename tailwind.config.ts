@@ -26,6 +26,7 @@ const config: Config = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         assetmanagementbg: "url(../assets/assetmanagementbg.svg)",
+        assetmanagementpagebg: "url(../assets/assetmanagementpagebg.svg)",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },

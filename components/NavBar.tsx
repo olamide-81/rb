@@ -45,7 +45,7 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
       <li className="">
         <Link
           className="py-3 px-4 rounded-[12px] hover:bg-[#3C76E10F] text-[#262626] flex items-center space-x-2 font-[500] text-[14px] "
-          href="#"
+          href="rafplans"
         >
           <Image src={investmentIcon} width={24} alt="investment" />{" "}
           <span>RAF Plan</span>
@@ -55,7 +55,7 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
       <li className="">
         <Link
           className="py-3 px-4 rounded-[12px] hover:bg-[#3C76E10F] text-[#262626] flex items-center space-x-2 font-[500] text-[14px] "
-          href="#"
+          href="/rafvault"
         >
           <Image src={assetIcon} width={24} alt="Asset Management" />{" "}
           <span>RAF Vault</span>
@@ -65,7 +65,7 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
       <li className="">
         <Link
           className="py-3 px-4 rounded-[12px] hover:bg-[#3C76E10F] text-[#262626] flex items-center space-x-2 font-[500] text-[14px] "
-          href="#"
+          href="/assetmanagement"
         >
           <Image src={assetIcon} width={24} alt="Savings" />{" "}
           <span>Asset Management</span>
@@ -75,7 +75,7 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
       <li className="">
         <Link
           className="py-3 px-4 rounded-[12px] hover:bg-[#3C76E10F] text-[#262626] flex items-center space-x-2 font-[500] text-[14px] "
-          href="#"
+          href="/community"
         >
           <Image src={communityIcon} width={24} alt="Community" />{" "}
           <span>Community</span>
@@ -95,7 +95,7 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
       <li className="">
         <Link
           className="py-3 px-4 rounded-[12px] hover:bg-[#3C76E10F] text-[#262626] flex items-center space-x-2 font-[500] text-[14px] "
-          href="#"
+          href="/aboutus"
         >
           <Image src={investmentIcon} width={24} alt="investment" />{" "}
           <span>About us</span>
@@ -105,7 +105,7 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
       <li className="">
         <Link
           className="py-3 px-4 rounded-[12px] hover:bg-[#3C76E10F] text-[#262626] flex items-center space-x-2 font-[500] text-[14px] "
-          href="#"
+          href="/blog"
         >
           <Image src={assetIcon} width={24} alt="Asset Management" />{" "}
           <span>Blog</span>
@@ -169,7 +169,7 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
           {isOpen.company && company()}
         </div>
 
-        <Link href="#" className="flex items-center space-x-2">
+        <Link href="/contactus" className="flex items-center space-x-2">
           <span className="font-switzer font-[500] leading-[15px] text-[14px]">
             Contact Us
           </span>
@@ -251,7 +251,7 @@ const NavBar = ({ style }: { style?: CSSProperties }) => {
               {isOpen.company && services("sidebar")}
             </div>
 
-            <Link onClick={() => setOpenSize(false)} href="#">
+            <Link onClick={() => setOpenSize(false)} href="/contactus">
               <p className="text-[18px] font-technor font-bold block cursor-pointer text-[#2e2e2e]">
                 Contact Us
               </p>
