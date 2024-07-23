@@ -13,6 +13,9 @@ const config: Config = {
         xxd: {
           max: '1000px',
         },
+        xd: {
+          max: '900px',
+        },
         mmd: {
           max: '740px',
         },
@@ -24,10 +27,11 @@ const config: Config = {
         switzer: ['var(--font-switzer)'],
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        assetmanagementbg: "url(../assets/assetmanagementbg.svg)",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        assetmanagementbg: 'url(../assets/assetmanagementbg.svg)',
+        bgplans: 'url(../assets/bg_plans.png)',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
         'accent-1': '#FAFAFA',
@@ -61,4 +65,4 @@ const config: Config = {
   },
   plugins: [],
 }
-export default config
+export default config;
